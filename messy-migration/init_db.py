@@ -12,10 +12,6 @@ CREATE TABLE IF NOT EXISTS users (
 )
 ''')
 
-cursor.execute("INSERT INTO users (name, email, password) VALUES ('John Doe', 'john@example.com', 'password123')")
-cursor.execute("INSERT INTO users (name, email, password) VALUES ('Jane Smith', 'jane@example.com', 'secret456')")
-cursor.execute("INSERT INTO users (name, email, password) VALUES ('Bob Johnson', 'bob@example.com', 'qwerty789')")
-
 conn.commit()
 conn.close()
 
